@@ -1,7 +1,6 @@
 import unittest
 from EmotionDetection import emotion_detector
 
-
 class TestEmotionDetector(unittest.TestCase):
 
     def test_emotions(self):
@@ -17,7 +16,6 @@ class TestEmotionDetector(unittest.TestCase):
             with self.subTest(statement=statement):
                 result = emotion_detector(statement)
                 self.assertEqual(result['dominant_emotion'], expected_emotion)
-
 
 if __name__ == '__main__':
     unittest.main()
